@@ -66,5 +66,6 @@
 .modal__footer {
   padding: 5px 5px;
   border-top: 1px solid #eee;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
