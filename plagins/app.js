@@ -17,9 +17,15 @@ const fruits = [
     price: 40,
     img: "plagins/mango.png",
   },
+  {
+    id: 3,
+    title: "Манго",
+    price: 40,
+    img: "plagins/mango.png",
+  },
 ];
 
-const PriceModal = $.modal({
+const priceModal = $.modal({
   title: "Цена на товар",
   closable: true,
   width: "400px",
@@ -28,7 +34,7 @@ const PriceModal = $.modal({
       text: "Закрыть",
       type: "primary",
       handler() {
-        PriceModal.close();
+        priceModal.close();
       },
     },
   ],
@@ -57,11 +63,15 @@ render();
 document.addEventListener("click", (event) => {
   event.preventDefault();
   const btnType = event.target.dataset.btn;
-  const id = event.target.dataset.id;
+  const id = +event.target.dataset.id;
 
   if (btnType === "price") {
     const fruit = fruits.find((f) => f.id === id);
+    priceModal.setContent(
+      `<p> Цена на ${fruit.title} <strong>${fruit.price}</strong> $</p>`
+    );
+
     console.log(fruit);
-    PriceModal.open();
+    priceModal.open();
   }
 });
