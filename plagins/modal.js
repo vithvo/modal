@@ -84,7 +84,6 @@ $.modal = function (options) {
   };
 
   const listener = (event) => {
-    console.log("clicked", event.target.dataset.close);
     if (event.target.dataset.close) {
       modal.close();
     }

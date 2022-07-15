@@ -69,3 +69,27 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* .col {
+  min-height: 320px;
+
+  display: flex;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-body {
+  position: relative;
+  text-align: bottom;
+} */
+
+.btn {
+  margin-bottom: 10px;
+}
+.card-title {
+  margin-bottom: 20px;
+}
