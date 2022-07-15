@@ -1,3 +1,24 @@
+const fruits = [
+  {
+    id: 1,
+    title: "Яблоки",
+    price: 20,
+    img: "C:Users\vithvDesktopJSModal JSplaginsapple.png",
+  },
+  {
+    id: 2,
+    title: "Апельсин",
+    price: 30,
+    img: "C:Users\vithvDesktopJSModal JSplaginsorange.png",
+  },
+  {
+    id: 3,
+    title: "Манго",
+    price: 40,
+    img: "C:Users\vithvDesktopJSModal JSplaginsmango.png",
+  },
+];
+
 const modal = $.modal({
   title: "Vi Modal",
   closable: true,
